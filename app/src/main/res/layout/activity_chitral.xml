@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashbg"
+    tools:context=".Chitral">
+
+    <TextView
+        android:id="@+id/txtch_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C H I T R A L"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+android:layout_centerHorizontal="true"        />
+    <HorizontalScrollView
+        android:id="@+id/scrollviewchitral"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/chitral"
+                />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/chitral2"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/chitral3"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/chitral4"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/about_chitral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:layout_marginLeft="2dp"
+
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@id/scrollviewchitral"
+        />
+    <TextView
+        android:id="@+id/details_chitral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_chitral"
+        android:textColor="@color/black"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:text="Chitral District was the largest district in the Khyber-Pakhtunkhwa province of Pakistan, covering an area of 14,850 km², before splitting into Upper Chitral District and Lower Chitral District in 2018. Part of the Malakand Division, it is the northernmost district of Pakistan. It shares a border with Gilgit-Baltistan to the east, with Kunar, Badakshan and Nuristan provinces of Afghanistan to the north and west, and with the Khyber-Pakhtunkhwa districts of Swat and Dir to the south. A narrow strip of Wakhan Corridor separates Chitral from Tajikistan in the north."
+        />
+    <Button
+        android:id="@+id/chitral_interested"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/details_chitral"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/button_background_color"
+        android:text="Interested?"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/map_mainCH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chitral_interested"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/button_background_color"
+        android:text="Map"
+        android:textColor="@color/black"
+        tools:context="com.example.project.MapsActivityRaw"  />
+</RelativeLayout>

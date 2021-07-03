@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashbg"
+    tools:context=".pack1_hunza">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trip To Hunza &amp; Naltar Valley"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:text=" 6 Days"
+        android:drawableLeft="@drawable/timer"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/startloc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Staring from Lahore"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/loc"
+        android:textColor="@color/black"
+
+        android:layout_toRightOf="@+id/duration"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/departure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/duration"
+        android:text="15-07-2021"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+
+        android:drawableLeft="@drawable/date"/>
+
+    <ImageView
+        android:id="@+id/tripImage"
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        android:background="@drawable/hunza"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/departure"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 17,999"
+        android:textStyle="bold"
+        android:textColor="#B30A0A"
+        android:textSize="30dp"
+        android:layout_below="@id/tripImage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" /person"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/price"
+        android:layout_below="@+id/tripImage"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textColor="#B30A0A"/>
+
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU"
+        android:layout_below="@+id/price"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/breakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breakfast: Egg + Channay + Bread + Jam/Butter + Tea"
+        android:layout_below="@+id/menu"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/dinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dinner: Chicken Karahi/ Chicken Pulao/ Chicken BBQ + Roti + Raita + Cold Drinks"
+        android:layout_below="@+id/breakfast"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/services"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SERVICES ONLY INCLUDE"
+        android:layout_below="@+id/dinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/ser_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Transport(Coaster Saloon/Hiace)"
+        android:layout_below="@id/services"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/ser_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Breakfast &amp; Dinner"
+        android:layout_below="@id/ser_1"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/ser_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Hotel Accomodation on 3-4 person sharing per room"
+        android:layout_below="@id/ser_2"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/ser_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Services of Guide"
+        android:layout_below="@id/ser_3"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"/>
+
+    <RadioButton
+        android:id="@+id/book_this_pack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book this Package"
+        android:textColor="@color/black"
+        android:layout_below="@+id/ser_4"
+        android:layout_centerHorizontal="true"
+        android:checked="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/hunza_submit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_background_color"
+        android:text="Submit"
+        android:textColor="@color/black"
+        android:layout_below="@+id/book_this_pack"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

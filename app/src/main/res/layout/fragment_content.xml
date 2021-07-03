@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Content"
+    android:background="#00FFFFFF"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=" Thank you for using this App. Peace🤞"
+        android:elegantTextHeight="true"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+</FrameLayout>

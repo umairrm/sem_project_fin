@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashbg"
+    tools:context=".Shogran">
+
+    <TextView
+        android:id="@+id/txts_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S H O G R A N"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+    <HorizontalScrollView
+        android:id="@+id/scrollviewshogran"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/shogran"
+                />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/shogran2"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/shogran3"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/shogran4"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/about_shogran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:layout_marginLeft="2dp"
+
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@id/scrollviewshogran"
+        />
+    <TextView
+        android:id="@+id/details_shogran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_shogran"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:text="Shogran is a hill station situated on a green plateau in the Kaghan Valley, northern Pakistan at a height of 2,362 metres (7,749 ft) above sea level. It is located in the province of Khyber Pakhtunkhwa. Shogran is located at a distance of 34 kilometres (21 mi) away from Balakot. The road from Islamabad to Kiwai is metalled and measures 212 kilometres (132 mi). The local people are friendly and peaceful. It's mainly populated during the summer. Views of Siri Paye and 'Musa ka Musala Peak' are really nice from the lawns of the rest house."
+        />
+    <Button
+        android:id="@+id/shogran_interested"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_shogran"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/button_background_color"
+        android:text="Interested?"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/map_mainSH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_background_color"
+        android:text="Map"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_below="@+id/shogran_interested"
+        android:layout_marginTop="10dp"
+        tools:context="com.example.project.MapsActivityRaw" />
+</RelativeLayout>

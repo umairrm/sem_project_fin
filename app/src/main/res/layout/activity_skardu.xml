@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashbg"
+    tools:context=".Skardu">
+
+    <TextView
+        android:id="@+id/txtsk_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S K A R D U"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+android:layout_centerHorizontal="true"        />
+    <HorizontalScrollView
+        android:id="@+id/scrollviewskardu"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/skardu"
+                />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/skardu2"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/skardu3"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/skardu4"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/about_skardu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@id/scrollviewskardu"
+        />
+    <TextView
+        android:id="@+id/details_skardu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_skardu"
+        android:textColor="@color/black"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="2dp"
+        android:text="Skardu is a city located in Gilgit−Baltistan, Pakistan, and serves as the capital of the Skardu District. Skardu is situated at an elevation of nearly 2,500 metres (8,202 feet) in the Skardu Valley, at the confluence of the Indus and Shigar Rivers. The city is an important gateway to the eight-thousanders of the nearby Karakoram mountain range. The Indus River running through the region separates the Karakoram from the Himalayas."
+        />
+    <Button
+        android:id="@+id/skardu_interested"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/details_skardu"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/button_background_color"
+        android:text="Interested?"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/map_mainSK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skardu_interested"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/button_background_color"
+        android:text="Map"
+        android:textColor="@color/black"
+        tools:context="com.example.project.MapsActivityRaw"  />
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashbg"
+    tools:context=".Hunza">
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="H U N Z A"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"
+        />
+    <HorizontalScrollView
+        android:id="@+id/scrollviewhunza"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/hunza"
+                />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/hunza2"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/hunza3"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@drawable/hunza4"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/about_hunza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:layout_marginLeft="2dp"
+
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@id/scrollviewhunza"
+        />
+    <TextView
+        android:id="@+id/details_hunza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_hunza"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:text="Hunza is a mountainous valley in the Gilgit-Baltistan region of Pakistan. Hunza is situated in the northern part of Gilgit-Baltistan, Pakistan, bordering with Ishkoman to the northwest, Shigar to the southeast, Afghanistan's Wakhan Corridor to north, and the Xinjiang region of China to the northeast."
+        />
+
+    <Button
+        android:id="@+id/hunza_interested"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@+id/details_hunza"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/button_background_color"
+        android:text="Interested?"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/map_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hunza_interested"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/button_background_color"
+        android:layout_centerHorizontal="true"
+        android:text="Map"
+        android:textColor="@color/black"
+        tools:context="com.example.project.MapsActivityRaw" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_about"
+        android:icon="@drawable/ic_baseline_content_copy_24"
+        android:title="About" />
+    <item
+        android:id="@+id/navigation_content"
+        android:icon="@drawable/ic_baseline_edit_24"
+        android:title="Content" />
+
+</menu>

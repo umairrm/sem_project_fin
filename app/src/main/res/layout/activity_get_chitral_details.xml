@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetChitralDetails"
+    android:background="@drawable/splashbg"
+    >
+
+    <TextView
+        android:id="@+id/tv_MyDetailsForm4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="D E T A I L S"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/chitral_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/tv_MyDetailsForm4"
+        android:hint="Enter Your Name"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_row="0"
+        android:layout_column="1" />
+
+    <EditText
+        android:id="@+id/chitral_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_margin="10dp"
+        android:layout_below="@id/chitral_name"
+        android:layout_marginTop="1dp"
+        android:hint="Enter your email"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_column="1" />
+
+    <EditText
+        android:id="@+id/chitral_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_row="1"
+        android:layout_below="@id/chitral_email"
+        android:hint="Enter your phone number"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_column="1"
+        android:inputType="number"
+        />
+    <TextView
+        android:id="@+id/chitral_packages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P A C K A G E S"
+        android:textStyle="bold"
+        android:layout_below="@+id/chitral_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollviewhunza"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/chitral_packages"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/package1"
+                android:layout_width="410dp"
+                android:layout_height="150dp"
+                android:text="PACKAGE 1"
+                android:textSize="50dp"
+                android:textColor="@color/black"
+                android:backgroundTint="#2F6691"/>
+
+            <Button
+                android:id="@+id/package2"
+                android:layout_width="410dp"
+                android:layout_height="150dp"
+                android:text="PACKAGE 2"
+                android:textSize="50dp"
+                android:textColor="@color/black"
+                android:backgroundTint="#2F6691"/>
+            <Button
+                android:id="@+id/package3"
+                android:layout_width="410dp"
+                android:layout_height="150dp"
+                android:text="PACKAGE 3"
+                android:textSize="50dp"
+                android:textColor="@color/black"
+                android:backgroundTint="#2F6691"/>
+
+            <Button
+                android:id="@+id/package4"
+                android:layout_width="410dp"
+                android:layout_height="150dp"
+                android:text="PACKAGE 4"
+                android:textSize="50dp"
+                android:textColor="@color/black"
+                android:backgroundTint="#2F6691"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/chitral_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/button_background_color"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:text="Submit"/>
+
+</RelativeLayout>
